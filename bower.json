@@ -1,0 +1,11 @@
+{
+	"name": "OROLCC",
+	"version": "0.0.1",
+	"dependencies": {
+		"jquery": "1.11.3",
+		"modernizr": "latest",
+		"normalize.css": "latest",
+		"html5shiv": "latest"
+	},
+	"private": "true"
+}

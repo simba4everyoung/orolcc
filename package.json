@@ -1,0 +1,20 @@
+{
+	"name": "OROLCC",
+	"version": "0.0.1",
+	"author": "Simba",
+	"private": true,
+	"devDependencies": {
+		"grunt": "~0.4.5",
+		"matchdep": "*",
+		"grunt-contrib-concat": "*",
+		"grunt-contrib-connect": "*",
+		"grunt-contrib-sass": "*",
+		"grunt-contrib-jshint": "*",
+		"grunt-contrib-watch": "*",
+		"grunt-contrib-uglify": "*",
+		"grunt-svgstore": "*",
+		"grunt-postcss": "*",
+		"autoprefixer": "*",
+		"cssnano": "*"
+	}
+}
