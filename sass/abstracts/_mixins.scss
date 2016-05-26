@@ -32,3 +32,10 @@
   }
 }
 
+@mixin list-inline {
+  & > li {
+    display: inline-block;
+    list-style: none;
+  }
+}
+

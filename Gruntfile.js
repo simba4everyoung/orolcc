@@ -8,7 +8,7 @@ module.exports = function(grunt) {
 		watch: {
 			options: {
 				reload: true,
-				atBegin: true,
+				atBegin: true
 			},
 			css: {
 				files: [
@@ -18,7 +18,7 @@ module.exports = function(grunt) {
 				],
 				tasks: ['sass', 'postcss']
 			},
-			js： {
+			js: {
 				files: [
 					'js/main/*.js',
 					'js/main/*/*.js'
@@ -31,6 +31,18 @@ module.exports = function(grunt) {
 			}
 		},
 
+		//Task - Http Server
+		connect: {
+			server: {
+				options: {
+					port: 9001,
+					hostname: 'localhost',
+					base: '.',
+					keepalive: 'true'
+				}
+			}
+		},
+
 		//Task - JSHint
 		jshint: {
 			all: ['js/main/*.js', 'js/main/function/*.js']
@@ -39,11 +51,11 @@ module.exports = function(grunt) {
 		//Task - Compile Sass
 		sass: {
 			options: {
-				sourceMap: true
+				sourcemap: 'auto'
 			},
 			dev: {
 				files: {
-					'css/orolcc.css': 'sass/main.scss'
+					'css/main.css': 'sass/main.scss'
 				}
 			}
 		},
@@ -73,17 +85,18 @@ module.exports = function(grunt) {
 					'js/main/functions/*.js',
 					'js/main/*.js'
 				],
-				dest: 'js/orolcc-main.js',
+				dest: 'js/orolcc-main.js'
 			},
 			vendor: {
 				src: [
-
+					'bower_components/jquery/dist/jquery.min.js'
 				],
 				dest: 'js/orolcc-vendor.js',
 				nonull: true
 			},
 			vendorScss: {
 				src: [
+					'bower_components/normalize.css/normalize.css'
 				],
 				dest: 'sass/base/_vendor.scss',
 				nonull: true
@@ -129,10 +142,10 @@ module.exports = function(grunt) {
 					'i/assets.svg': ['i/svg-store/*.svg']
 				}
 			}
-		},
+		}
 
 	});		//grunt.initConfig()
 
 	grunt.registerTask('buildProduct', ['uglify', 'postcss']);
 
-}
+};

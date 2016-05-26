@@ -1,3 +1,19 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the header of the site/application.
 // -----------------------------------------------------------------------------
+
+.page-header {
+	height: 100px;
+}
+
+.header-left-sec {
+	
+}
+
+.header-right-sec {
+	float: right;
+
+	ul {
+		@include list-inline;
+	}
+}

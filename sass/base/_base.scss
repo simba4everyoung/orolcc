@@ -23,11 +23,25 @@ html {
  * Basic styles for links
  */
 a {
-  color: $brand-color;
   text-decoration: none;
 
   @include on-event {
-    color: $text-color;
     text-decoration: underline;
   }
+}
+
+.page-wrapper {
+	clear: both;
+	overflow: hidden;
+}
+
+.container {
+	width: 1200px;
+	padding: 0 15px;
+	margin: 0 auto;
+	position: relative;
+	@include respond(tablet) {
+		width: 100%;
+		padding: 0 20px;
+	}
 }
