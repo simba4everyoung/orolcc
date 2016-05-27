@@ -29,7 +29,11 @@
 
 // 6. Page-specific styles
 @import
-  'pages/home';
+  'pages/home/home',
+  'pages/home/home-hero',
+  'pages/home/home-promo',
+  'pages/home/home-pastor';
+
 
 // 7. Themes
 @import

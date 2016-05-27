@@ -1,0 +1,39 @@
+.hero {
+	margin-top: -60px;
+	position: relative;
+	z-index: -1;
+
+	.section-bg {
+		background: linear-gradient(rgba($pacific-blue, 0.7), transparent),
+					url('../i/assets/river.png') no-repeat,
+					$pacific-blue;
+		background-size: cover;
+		background-position: center;
+		position: fixed;
+		top: 0;
+		height: 800px;
+		width: 100%;
+	}
+
+	.inner-wrapper {
+		padding: 260px 0;
+		color: $white;
+
+		h1 {
+			text-align: center;
+			letter-spacing: 7px;
+		}
+
+		p {
+			margin: 10px 312px 0;
+			font-size: em(26px);
+			position: relative;
+
+			span {
+				position: absolute;
+				bottom: -35px;
+				right: 3px;
+			}
+		}
+	}
+}

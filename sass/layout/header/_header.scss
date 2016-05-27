@@ -5,7 +5,9 @@
 .page-header {
 	height: 60px;
 	padding: 20px 0;
+	background: transparent;
 	@include clearfix;
+	transform: background 0.3s ease-in;
 }
 
 .header-left-sec {
@@ -27,7 +29,7 @@
 			a {
 				color: $white;
 				position: relative;
-				@include underline($pacific-blue, 2px, -8px);
+				@include underline($white, 1px, -6px);
 			}
 		}
 	}
@@ -44,7 +46,7 @@
 
 			a {
 				color: $white;
-				@include underline($pacific-blue, 2px, -8px);
+				@include underline($white, 1px, -6px);
 			}
 		}
 	}

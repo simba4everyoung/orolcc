@@ -1,3 +1,27 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the button component.
 // -----------------------------------------------------------------------------
+
+.btn {
+	box-shadow: none;
+	border: none;
+	border-radius: 4px;
+	font-size: em(20px);
+	padding: 10px 60px;
+	transform: background 0.3s ease-in;
+
+	span {
+		position: relative;
+
+		.ico {
+			position: absolute;
+		}
+	}
+}
+
+.text-link {
+	color: $copper;
+	@include on-event {
+		text-decoration:　underline;
+	}
+}

@@ -1,0 +1,29 @@
+.promo {
+	background: $pacific-blue;
+	color: $white;
+	padding: 20px 0;
+
+	.inner-wrapper {
+		@include clearfix;
+		padding: 0 312px;
+	}
+
+	p {
+		float: left;
+		font-size: em(20px);
+		text-transform: uppercase;
+	}
+
+	.btn {
+		float: right;
+		border: solid 2px $white;
+		color: $white;
+		margin: 18px 0;
+
+		@include on-event {
+			background: $white;
+			color: $pacific-blue;
+		}
+	}
+
+}
