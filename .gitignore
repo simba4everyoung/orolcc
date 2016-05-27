@@ -52,10 +52,14 @@ logs
 #results
 npm-debug.log
 node_modules/
-bower_components/
 
 
 # Sublime specific #
 ####################
 sftp-config*
 *.sublime-*
+
+
+
+bower_components/
+.sass_cache/

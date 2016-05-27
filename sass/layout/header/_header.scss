@@ -3,7 +3,9 @@
 // -----------------------------------------------------------------------------
 
 .page-header {
-	height: 100px;
+	height: 60px;
+	padding: 20px 0;
+	@include clearfix;
 }
 
 .header-left-sec {
@@ -15,5 +17,35 @@
 
 	ul {
 		@include list-inline;
+		display: inline-block;
+	}
+
+	.nav {
+		li {
+			padding: 0 15px;
+
+			a {
+				color: $nobel;
+				position: relative;
+				@include underline($pacific-blue, 2px, -8px);
+			}
+		}
+	}
+
+	.language-switch {
+		margin-left: 30px;
+		
+		li {
+			padding: 0 5px;
+
+			&:first-child {
+				border-right: 1px solid $nobel;
+			}
+
+			a {
+				color: $nobel;
+				@include underline($pacific-blue, 2px, -8px);
+			}
+		}
 	}
 }

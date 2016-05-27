@@ -354,43 +354,6 @@ td,
 th {
   padding: 0; }
 
-/**
- * Set up a decent box model on the root element
- */
-html {
-  box-sizing: border-box; }
-
-/**
- * Make all elements from the DOM inherit from the parent box-sizing
- * Since `*` has a specificity of 0, it does not override the `html` value
- * making all elements inheriting from the root box-sizing value
- * See: https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
- */
-*, *::before, *::after {
-  box-sizing: inherit; }
-
-/**
- * Basic styles for links
- */
-a {
-  text-decoration: none; }
-  a:hover, a:active, a:focus {
-    text-decoration: underline; }
-
-.page-wrapper {
-  clear: both;
-  overflow: hidden; }
-
-.container {
-  width: 1200px;
-  padding: 0 15px;
-  margin: 0 auto;
-  position: relative; }
-  @media only screen and (max-width: 1199px) {
-    .container {
-      width: 100%;
-      padding: 0 20px; } }
-
 @font-face {
   font-family: 'Rokkitt';
   src: url("../fonts/RokkittRegular.otf");
@@ -412,7 +375,53 @@ a {
  */
 body {
   color: #b3b3b3;
-  font-family: "MyriadPro", Helvetica, "Helvetica Neue", Arial, "Microsoft YaHei", Õ¥«Þ¢»ÚøàÚ╗æ, STHeiti, ÕìÄµûçÚ╗æõ¢ô, SimHei, Ú╗æõ¢ô, sans-serif; }
+  font-family: "MyriadPro", Helvetica, "Helvetica Neue", Arial, "Microsoft YaHei", Õ¥«Þ¢»ÚøàÚ╗æ, STHeiti, ÕìÄµûçÚ╗æõ¢ô, SimHei, Ú╗æõ¢ô, sans-serif;
+  font-size: 1em; }
+
+/**
+ * Set up a decent box model on the root element
+ */
+html {
+  box-sizing: border-box; }
+
+/**
+ * Make all elements from the DOM inherit from the parent box-sizing
+ * Since `*` has a specificity of 0, it does not override the `html` value
+ * making all elements inheriting from the root box-sizing value
+ * See: https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+ */
+*, *::before, *::after {
+  box-sizing: inherit; }
+
+/**
+ * Basic styles for links
+ */
+a {
+  text-decoration: none; }
+  a:hover, a:active, a:focus {
+    text-decoration: none; }
+
+ul {
+  padding: 0;
+  margin: 0; }
+
+.page-wrapper {
+  clear: both;
+  overflow: hidden; }
+
+.container {
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+  position: relative; }
+  .container::after {
+    clear: both;
+    content: '';
+    display: table; }
+  @media only screen and (max-width: 1199px) {
+    .container {
+      width: 100%;
+      padding: 0 20px; } }
 
 /**
  * Clear inner floats
@@ -450,12 +459,60 @@ body {
   width: 1px; }
 
 .page-header {
-  height: 100px; }
+  height: 60px;
+  padding: 20px 0; }
+  .page-header::after {
+    clear: both;
+    content: '';
+    display: table; }
 
 .header-right-sec {
   float: right; }
-  .header-right-sec ul > li {
-    display: inline-block;
-    list-style: none; }
+  .header-right-sec ul {
+    display: inline-block; }
+    .header-right-sec ul > li {
+      display: inline-block;
+      list-style: none; }
+  .header-right-sec .nav li {
+    padding: 0 15px; }
+    .header-right-sec .nav li a {
+      color: #b3b3b3;
+      position: relative;
+      position: relative; }
+      .header-right-sec .nav li a:hover:after, .header-right-sec .nav li a:active:after, .header-right-sec .nav li a:focus:after {
+        display: block; }
+      .header-right-sec .nav li a:after {
+        display: none;
+        content: "";
+        position: absolute;
+        left: 0;
+        width: 100%;
+        bottom: -8px;
+        height: 2px;
+        background: #0494c9; }
+  .header-right-sec .language-switch {
+    margin-left: 30px; }
+    .header-right-sec .language-switch li {
+      padding: 0 5px; }
+      .header-right-sec .language-switch li:first-child {
+        border-right: 1px solid #b3b3b3; }
+      .header-right-sec .language-switch li a {
+        color: #b3b3b3;
+        position: relative; }
+        .header-right-sec .language-switch li a:hover:after, .header-right-sec .language-switch li a:active:after, .header-right-sec .language-switch li a:focus:after {
+          display: block; }
+        .header-right-sec .language-switch li a:after {
+          display: none;
+          content: "";
+          position: absolute;
+          left: 0;
+          width: 100%;
+          bottom: -8px;
+          height: 2px;
+          background: #0494c9; }
+
+.hero {
+  background: url("../i/assets/river.png") no-repeat;
+  background-size: cover; }
 
 /*# sourceMappingURL=main.css.map */

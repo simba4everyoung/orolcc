@@ -32,10 +32,40 @@
   }
 }
 
+
+//Custom mixins
 @mixin list-inline {
   & > li {
     display: inline-block;
     list-style: none;
+  }
+}
+
+@mixin clearfix {
+  &::after {
+    clear: both;
+    content: '';
+    display: table;
+  }
+}
+
+@mixin underline($color, $height: 2px, $bottom: 0) {
+  position: relative;
+  @include on-event {
+    &:after {
+      display: block;
+    }
+  }
+
+  &:after {
+    display: none;
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    bottom: $bottom;
+    height: $height;
+    background: $color;
   }
 }
 
