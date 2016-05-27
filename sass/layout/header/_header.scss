@@ -25,7 +25,7 @@
 			padding: 0 15px;
 
 			a {
-				color: $nobel;
+				color: $white;
 				position: relative;
 				@include underline($pacific-blue, 2px, -8px);
 			}
@@ -38,12 +38,12 @@
 		li {
 			padding: 0 5px;
 
-			&:first-child {
-				border-right: 1px solid $nobel;
+			&:not(:last-child) {
+				border-right: 1px solid $white;
 			}
 
 			a {
-				color: $nobel;
+				color: $white;
 				@include underline($pacific-blue, 2px, -8px);
 			}
 		}

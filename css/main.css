@@ -376,7 +376,11 @@ th {
 body {
   color: #b3b3b3;
   font-family: "MyriadPro", Helvetica, "Helvetica Neue", Arial, "Microsoft YaHei", Õ¥«Þ¢»ÚøàÚ╗æ, STHeiti, ÕìÄµûçÚ╗æõ¢ô, SimHei, Ú╗æõ¢ô, sans-serif;
-  font-size: 1em; }
+  font-size: 1em;
+  line-height: 1.5; }
+
+h1 {
+  font-size: 4em; }
 
 /**
  * Set up a decent box model on the root element
@@ -403,6 +407,15 @@ a {
 
 ul {
   padding: 0;
+  margin: 0; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
   margin: 0; }
 
 .page-wrapper {
@@ -476,7 +489,7 @@ ul {
   .header-right-sec .nav li {
     padding: 0 15px; }
     .header-right-sec .nav li a {
-      color: #b3b3b3;
+      color: #ffffff;
       position: relative;
       position: relative; }
       .header-right-sec .nav li a:hover:after, .header-right-sec .nav li a:active:after, .header-right-sec .nav li a:focus:after {
@@ -494,10 +507,10 @@ ul {
     margin-left: 30px; }
     .header-right-sec .language-switch li {
       padding: 0 5px; }
-      .header-right-sec .language-switch li:first-child {
-        border-right: 1px solid #b3b3b3; }
+      .header-right-sec .language-switch li:not(:last-child) {
+        border-right: 1px solid #ffffff; }
       .header-right-sec .language-switch li a {
-        color: #b3b3b3;
+        color: #ffffff;
         position: relative; }
         .header-right-sec .language-switch li a:hover:after, .header-right-sec .language-switch li a:active:after, .header-right-sec .language-switch li a:focus:after {
           display: block; }
@@ -512,7 +525,21 @@ ul {
           background: #0494c9; }
 
 .hero {
-  background: url("../i/assets/river.png") no-repeat;
-  background-size: cover; }
+  margin-top: -60px;
+  position: relative;
+  z-index: -1; }
+  .hero .section-bg {
+    background: linear-gradient(rgba(4, 148, 201, 0.7), transparent), url("../i/assets/river.png") no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%; }
+  .hero .inner-wrapper {
+    padding: 300px 0;
+    color: #ffffff; }
+    .hero .inner-wrapper h1 {
+      text-align: center;
+      letter-spacing: 20px; }
 
 /*# sourceMappingURL=main.css.map */
