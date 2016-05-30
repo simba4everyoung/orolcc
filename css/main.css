@@ -593,20 +593,25 @@ p {
     float: right;
     border: solid 2px #ffffff;
     color: #ffffff;
-    margin: 18px 0; }
+    margin: 18px 0;
+    background: transparent; }
     .promo .btn:hover, .promo .btn:active, .promo .btn:focus {
       background: #ffffff;
       color: #0494c9; }
 
 .pastor {
-  background: #ffffff;
-  padding: 80px 0;
   color: #4d4d4d;
-  font-size: 1.25em; }
-  .pastor .container::after {
-    clear: both;
-    content: '';
-    display: table; }
+  font-size: 1.25em;
+  background: #ffffff; }
+  .pastor .container {
+    padding: 80px 0;
+    background: radial-gradient(transparent, #ffffff 60%), url("../i/assets/pastor.jpg") no-repeat;
+    background-size: 50% 100%, 50%;
+    background-position: right; }
+    .pastor .container::after {
+      clear: both;
+      content: '';
+      display: table; }
   .pastor .inner-wrapper {
     width: 640px; }
   .pastor p {

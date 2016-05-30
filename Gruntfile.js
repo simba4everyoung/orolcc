@@ -4,11 +4,25 @@ module.exports = function(grunt) {
 	grunt.initConfig({
 		pkg: grunt.file.readJSON('package.json'),
 
+		//Task - Server
+		connect: {
+			options: {
+				port: 9000,
+				hostname: 'localhost',
+				livereload: 35729,
+				keepalive: true
+			},
+			livereload: {
+				options: {
+					open: true
+				}
+			}
+		},
+
 		//Task - Watch
 		watch: {
 			options: {
-				reload: true,
-				atBegin: true
+				livereload: true
 			},
 			css: {
 				files: [
@@ -28,18 +42,6 @@ module.exports = function(grunt) {
 			svg: {
 				files: ['i/svg-store/*.svg'],
 				tasks: ['svgstore']
-			}
-		},
-
-		//Task - Http Server
-		connect: {
-			server: {
-				options: {
-					port: 9001,
-					hostname: 'localhost',
-					base: '.',
-					keepalive: 'true'
-				}
 			}
 		},
 
