@@ -1,6 +1,5 @@
 .pastor {
 	color: $tundora;
-	font-size: em(20px);
 	background: $white;
 
 	.container {
@@ -18,6 +17,7 @@
 
 	p {
 		margin-top: 10px;
+		font-size: em(20px);
 	}
 
 	span {

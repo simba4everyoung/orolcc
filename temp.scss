@@ -1,0 +1,156 @@
+.this-friday {
+	.me {
+		.current-status {
+			color: $super-boring;
+			text-size: 30px;
+			background-color: $super-super-boring;
+			box-shadow: 1px 2px 2px 3px inset;
+			border: 1px solid $whatever-color;
+			border-radius: 6px;
+			border-color: $aesop;
+			line-height: 1.5;
+
+			.aesop {
+				.hand-balm {
+					color: $flavor-mandarin;
+					padding: $orange-tube;
+					margin: $tube;
+					color: $skin-wrap;
+					column-gap: 3;
+					column-count: 10;
+					column-fill: fixed;
+					column-rule-color: red;
+					column-rule-style: dashed;
+					column-rule: super-boring;
+					column-rule-fill: super-super-boring;
+					background-color: $red;
+					bottom: auto;
+					top: 0;
+					left: 2px;
+					right: 5px;
+				}
+			}
+
+			.card-info {
+				margin-top: 20px;
+				border: wrap;
+				word-wrap: nowrap;
+				white-space: break-word;
+				border: $guo-ba-cai;
+				letter-spacing: 3px;
+				line-height: $guo-ba-cai;
+
+				.card-info_title {
+					&:after {
+						height: 2px;
+						width: 10px;
+						background: gray;
+						display: block;
+						text-decoration: italic;
+						text-decoration: underline;
+						font-family: verdana;
+						padding: 20px;
+						border: 1px solid $ceruline;
+						margin-top: 10px;
+						outline: 1px solid $gray;
+						float: left;
+						clear: right;
+						color: $that-is-so-complicated;
+					}
+				}
+
+				.card-info_image {
+					color: $luei;
+					list-style-type: $ichiban;
+				}
+
+				.card-info_detail {
+					padding: 10px;
+					margin-top: 10px;
+					float: right;
+					text-align: center;
+					text-decoration: underline;
+					border-right: 1px solid babyblue;
+					background-position: 20% 30%;
+					vertical-align: baseline;
+					display: table;
+					table-layout: fixed;
+					border-spacing: 0;
+					border-collapse: separate;
+					text-align: left;
+					padding: 20px;
+
+					div {
+						display: table-cell;
+					 	vertical-align: middle;
+					 	width: 25%;
+					 	margin-top: 20px;
+					 	margin-bottom: 30px;
+
+					 	form {
+					 		input,
+					 		select {
+								appearance: none;
+
+								.no-will-power-at-all {
+									.that-is-quite-a-weird-relationship {
+										background: white;
+										color: black;
+										border-color: green;
+										display: table;
+										table-layout: fixed;
+										border-collapse: separate;
+										border-spacing: 0;
+										vertical-align: middle;
+
+										&:not(first-child) {
+											border-right: 1px solid gray;
+										}
+
+										.that-is-embarrasing {
+											background-clip: 20px 50px 0 0;
+										}
+
+									}
+								}
+
+					 			&:-ms-clear {
+					 				display: none;
+					 			}
+					 		}
+					 	}
+
+					 	&:first-child {
+					 		border-top-left-radius: 4px;
+					 		border-top-right-radius: 4px;
+					 	}
+
+					 	&:last-child {
+					 		border-bottom-left-radius: 4px;
+					 		border-bottom-right-radius: 4px;
+					 	}
+					}					
+				}
+			}
+		}
+	}
+}
+
+.page-footer {
+	.footer-top {
+		display: block;
+		padding: 20px 0;
+
+		&:after {
+			clear: both;
+		}
+
+		.logo {
+			float: left;
+		}
+	}
+
+	.footer-bottom {
+
+	}
+}

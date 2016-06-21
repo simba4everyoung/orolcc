@@ -1,0 +1,67 @@
+.disciples {
+	background: $wild-sand;
+
+	.container {
+		padding: 80px 0;
+	}
+
+	h2 {
+		text-align: center;
+		@include underline($silver, 2px, -15px);
+
+		&:after {
+			display: block;
+			width: 50px;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+	}
+
+	p {
+		margin: 30px auto;
+		width: 60%;
+		text-align: center;
+	}
+
+	.cards-wrapper {
+		margin-top: 20px;
+
+		.card {
+			width: 30%;
+			float: left;
+			margin-left: 5%;
+			margin-top: 30px;
+
+			&:nth-child(3n+1) {
+				margin-left: 0;
+			}
+
+			img {
+				width: 100%;
+			}
+
+			.card-info {
+				margin-top: 20px;
+
+				.card-info_title {
+					text-align: center;
+					color: $scorpion;
+					font-size: em(22px);
+					@include underline($silver, 2px, -15px);
+					
+
+					&:after {
+						display: block;
+						width: 20%;
+						left: 50%;
+						transform: translateX(-50%);
+					}
+				}
+
+				.card-info_detail {
+					margin-top: 30px;
+				}
+			}
+		}
+	}
+}

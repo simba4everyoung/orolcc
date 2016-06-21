@@ -507,8 +507,8 @@ p {
         position: absolute;
         left: 0;
         width: 100%;
-        bottom: -6px;
-        height: 1px;
+        bottom: -8px;
+        height: 2px;
         background: #ffffff; }
   .header-right-sec .language-switch {
     margin-left: 30px; }
@@ -537,7 +537,7 @@ p {
   border-radius: 4px;
   font-size: 1.25em;
   padding: 10px 60px;
-  transform: background 0.3s ease-in; }
+  transition: background 0.3s ease-in; }
   .btn span {
     position: relative; }
     .btn span .ico {
@@ -601,7 +601,6 @@ p {
 
 .pastor {
   color: #4d4d4d;
-  font-size: 1.25em;
   background: #ffffff; }
   .pastor .container {
     padding: 80px 0;
@@ -615,10 +614,75 @@ p {
   .pastor .inner-wrapper {
     width: 640px; }
   .pastor p {
-    margin-top: 10px; }
+    margin-top: 10px;
+    font-size: 1.25em; }
   .pastor span {
     display: block;
     text-align: right;
     margin-top: 15px; }
+
+.disciples {
+  background: #f5f5f5; }
+  .disciples .container {
+    padding: 80px 0; }
+  .disciples h2 {
+    text-align: center;
+    position: relative; }
+    .disciples h2:hover:after, .disciples h2:active:after, .disciples h2:focus:after {
+      display: block; }
+    .disciples h2:after {
+      display: none;
+      content: "";
+      position: absolute;
+      left: 0;
+      width: 100%;
+      bottom: -15px;
+      height: 2px;
+      background: #cccccc; }
+    .disciples h2:after {
+      display: block;
+      width: 50px;
+      left: 50%;
+      transform: translateX(-50%); }
+  .disciples p {
+    margin: 30px auto;
+    width: 60%;
+    text-align: center; }
+  .disciples .cards-wrapper {
+    margin-top: 20px; }
+    .disciples .cards-wrapper .card {
+      width: 30%;
+      float: left;
+      margin-left: 5%;
+      margin-top: 30px; }
+      .disciples .cards-wrapper .card:nth-child(3n+1) {
+        margin-left: 0; }
+      .disciples .cards-wrapper .card img {
+        width: 100%; }
+      .disciples .cards-wrapper .card .card-info {
+        margin-top: 20px; }
+        .disciples .cards-wrapper .card .card-info .card-info_title {
+          text-align: center;
+          color: #5e5e5e;
+          font-size: 1.375em;
+          position: relative; }
+          .disciples .cards-wrapper .card .card-info .card-info_title:hover:after, .disciples .cards-wrapper .card .card-info .card-info_title:active:after, .disciples .cards-wrapper .card .card-info .card-info_title:focus:after {
+            display: block; }
+          .disciples .cards-wrapper .card .card-info .card-info_title:after {
+            display: none;
+            content: "";
+            position: absolute;
+            left: 0;
+            width: 100%;
+            bottom: -15px;
+            height: 2px;
+            background: #cccccc; }
+          .disciples .cards-wrapper .card .card-info .card-info_title:after {
+            display: block;
+            width: 20%;
+            left: 50%;
+            transform: translateX(-50%); }
+        .disciples .cards-wrapper .card .card-info .card-info_detail {
+          margin-top: 30px; }
 
 /*# sourceMappingURL=main.css.map */

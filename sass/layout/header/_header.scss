@@ -29,7 +29,7 @@
 			a {
 				color: $white;
 				position: relative;
-				@include underline($white, 1px, -6px);
+				@include underline($white, 2px, -8px);
 			}
 		}
 	}
